@@ -19,11 +19,7 @@ function handleNavigationFromHash() {
 }
 
 function wireCtaButton() {
-  var cta = document.getElementById('cta');
-  if (!cta) return;
-  cta.addEventListener('click', function() {
-    alert('Hello from your single-page site!');
-  });
+  // No-op placeholder; keep for future interactions
 }
 
 window.addEventListener('DOMContentLoaded', function() {

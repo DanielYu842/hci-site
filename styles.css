@@ -84,6 +84,79 @@ button:active { transform: translateY(1px); }
   opacity: 0.9;
 }
 
+/* Portfolio additions */
+.profile {
+  margin-top: 12px;
+}
+.profile-card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.avatar {
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, rgba(79,70,229,.2), rgba(34,211,238,.2));
+  border-radius: 50%;
+  font-size: 28px;
+}
+.profile-meta .row {
+  display: flex;
+  gap: 8px;
+}
+.profile-meta .label {
+  width: 88px;
+  color: var(--muted);
+}
+
+.diary-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 12px;
+  margin-top: 12px;
+}
+.entry {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.entry-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.tag {
+  font-size: 12px;
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  color: var(--muted);
+}
+.entry-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.links-list {
+  list-style: disc inside;
+}
+
+details.hint {
+  margin-top: 10px;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f7f7fb;

@@ -32,3 +32,28 @@ You have two easy options:
 ## Notes
 - This is a hash-based single page (uses `#home`, `#about`, `#contact`).
 - Works without JavaScript for basic content (you can keep one section visible by default if desired).
+
+## HCI Diary: how to add an entry
+Entries live inline in `index.html` under the `#diary` section.
+
+Steps:
+1. Find the `<ol class="diary-list">` in `index.html`.
+2. Add a new `<li>` at the top with structure:
+
+```html
+<li>
+  <div class="entry">
+    <div class="entry-header">
+      <time datetime="YYYY-MM-DD">Week N • YYYY-MM-DD</time>
+      <span class="tag">Topic</span>
+    </div>
+    <p>1–3 sentences summary. Add links below if needed.</p>
+    <ul class="entry-links">
+      <li><a href="#">Artifact link</a></li>
+    </ul>
+  </div>
+  </li>
+```
+
+3. Commit and push to update your GitHub Page.
+

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>My Single Page</title>
+  <title>Personal Portfolio • HCI Diary</title>
   <meta name="description" content="A minimal single-page website">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,30 +13,78 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <h1>My Single Page</h1>
+      <h1>Your Name — HCI Portfolio</h1>
       <nav class="site-nav">
-        <a href="#home">Home</a>
         <a href="#about">About</a>
+        <a href="#diary">Diary</a>
+        <a href="project1.html">Project 1</a>
+        <a href="#links">Links</a>
         <a href="#contact">Contact</a>
       </nav>
     </div>
   </header>
 
   <main class="site-main container" id="app" role="main">
-    <section id="home" class="view is-active" aria-labelledby="home-title">
-      <h2 id="home-title">Home</h2>
-      <p>Welcome! This is a minimal single-page website you can deploy to GitHub Pages.</p>
-      <button id="cta">Say hello</button>
+    <section id="about" class="view is-active" aria-labelledby="about-title">
+      <h2 id="about-title">About</h2>
+      <p>Hello! I’m <strong>Your Name</strong>, a student in the HCI course. This page hosts my personal portfolio and weekly project diaries.</p>
+      <div class="profile">
+        <div class="profile-card">
+          <div class="avatar" aria-hidden="true">🙂</div>
+          <div class="profile-meta">
+            <div class="row"><span class="label">Program</span><span>BSc / MSc / PhD</span></div>
+            <div class="row"><span class="label">Semester</span><span>Fall 2025</span></div>
+            <div class="row"><span class="label">Interests</span><span>UX, prototyping, data viz</span></div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section id="about" class="view" aria-labelledby="about-title">
-      <h2 id="about-title">About</h2>
-      <p>Built with plain HTML, CSS, and a tiny bit of JavaScript. No bundlers or frameworks needed.</p>
+    <section id="diary" class="view" aria-labelledby="diary-title">
+      <h2 id="diary-title">Project Diary</h2>
+      <p>Weekly notes and artifacts for my HCI project. Add entries below (newest first).</p>
+      <ol class="diary-list">
+        <li>
+          <div class="entry">
+            <div class="entry-header">
+              <time datetime="2025-09-22">Week 1 • 2025-09-22</time>
+              <span class="tag">Kickoff</span>
+            </div>
+            <p>Set up personal page and wrote initial project goals. Sketched 2 ideas.</p>
+            <ul class="entry-links">
+              <li><a href="#" aria-label="Link to sketch or document">Sketches (PNG)</a></li>
+              <li><a href="#" aria-label="Link to notes">Notes (Google Doc)</a></li>
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="entry">
+            <div class="entry-header">
+              <time datetime="2025-09-29">Week 2 • 2025-09-29</time>
+              <span class="tag">Research</span>
+            </div>
+            <p>[Placeholder] User interviews and competitive review.</p>
+          </div>
+        </li>
+      </ol>
+      <details class="hint">
+        <summary>How to add a new diary entry</summary>
+        <p>Edit this file and add a new <code>&lt;li&gt;</code> at the top of the <code>.diary-list</code>. Include date, week number, a summary, and any links/artifacts.</p>
+      </details>
+    </section>
+
+    <section id="links" class="view" aria-labelledby="links-title">
+      <h2 id="links-title">Links</h2>
+      <ul class="links-list">
+        <li><a href="mailto:your.email@example.com">Email</a></li>
+        <li><a href="https://github.com/your-username" target="_blank" rel="noopener">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/your-handle/" target="_blank" rel="noopener">LinkedIn</a></li>
+      </ul>
     </section>
 
     <section id="contact" class="view" aria-labelledby="contact-title">
       <h2 id="contact-title">Contact</h2>
-      <p>Replace this with your preferred contact info or a link to your profiles.</p>
+      <p>For course-related questions, contact the TA/instructor as provided in the syllabus. For portfolio feedback, reach me via email or LinkedIn above.</p>
     </section>
   </main>
 

@@ -57,3 +57,12 @@ Steps:
 
 3. Commit and push to update your GitHub Page.
 
+## Project 1 section
+The Project 1 area lives under the `#p1` section in `index.html`. Edit the cards under the `.p1-grid`:
+
+- Replace placeholders (team, dates, contributions)
+- Link your artifacts (interview notes, photos, mind map, slides, AI usage log)
+- Keep your ongoing weekly notes in the `Diary` section
+
+Navigation includes a `Project 1` link (`#p1`).
+

@@ -157,6 +157,29 @@ details.hint {
   margin-top: 10px;
 }
 
+/* Project 1 layout */
+.p1-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+.card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 16px;
+}
+.card h3 {
+  margin-top: 0;
+}
+
+@media (min-width: 720px) {
+  .p1-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --bg: #f7f7fb;

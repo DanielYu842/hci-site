@@ -18,6 +18,7 @@
         <a href="#about">About</a>
         <!-- <a href="#diary">Diary</a> -->
         <a href="#p1">Project 1</a>
+        <a href="#p2">Project 2</a>
         <!-- <a href="#links">Links</a> -->
         <!-- <a href="#contact">Contact</a> -->
       </nav>
@@ -157,6 +158,134 @@
             <li><strong>Process mindset</strong>: Start with low‑fi wireflows, test with short, observable tasks (place an order, edit an item, pay), and track time on task and error rate to guide iterations.</li>
           </ul>
           <p>Overall, accessibility constraints did not limit creativity; they focused it. By designing for the hardest case (wet hands, non‑standard posture), the kiosk becomes simpler and better for everyone.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="p2" class="view" aria-labelledby="p2-title">
+      <h2 id="p2-title">Project 2</h2>
+
+      <div class="p1-grid">
+        <article class="card">
+          <h3>Description & Goal</h3>
+          <p>This project explores how students cope with food access during typhoons while living in HKUST dorms. Many students do not have full kitchens and cannot easily buy groceries when stores and canteens close. Our goal is to design a chatbot that helps students make quick meals with what they already have, reduces stress, and provides clear, supportive guidance during emergencies.</p>
+        </article>
+
+        <article class="card full-width">
+          <h3>Part 1: Empathize</h3>
+          
+          <h5>Observe / Interview</h5>
+          <p>During Typhoon Ragasa, Emily (Hall 4 Resident) couldn't leave campus to buy groceries. Nearby stores were nearly empty, and Hall 4's shared kitchen created long queues."“I only had a few cans of soup and instant noodles left. The store was out of vegetables and eggs, and our dorm only has a stove… I had to wait a long time to use it.”</p>
+          <p>Our interview transcript captured Emily's struggles with grocery access during the typhoon, long kitchen queues, and limited ingredients. Our observations documented the differences between halls with full kitchens versus those with only microwaves, the suspension of delivery services, early canteen closures, and safety restrictions on cross-hall kitchen use.</p>
+          
+          <h5>Additional Observations</h5>
+          <p>Halls without kitchens (e.g., Hall 9) often have only microwaves and water dispensers. Delivery suspended; canteens closed early; rationing created uncertainty. Borrowing kitchens across halls was restricted for safety.</p>
+
+          <h5>Scenario: Typhoon Season in Student Dorms</h5>
+          <p>A voice/chat agent could provide real-time updates on open canteens and stores. It could suggest simple recipes using current ingredients and appliances (e.g., microwave-only). It could coordinate shared kitchen use or food-sharing among hallmates. It could offer safety tips and supportive messaging to reduce anxiety.</p>
+
+        </article>
+
+        <article class="card full-width">
+          <h3>Part 2: Ideate</h3>
+        
+          <h4>Task 1 — Point of View (POV)</h4>
+          <p>From our interviews, we learned that many students struggle to eat properly during typhoons. Canteens may close, ingredients are limited, and most dorms only have basic kitchen tools. Students often end up eating instant noodles or skipping meals. They want fast, simple help and clear guidance on how to cook with what they already have.</p>
+        
+          <p>We explored whether a chatbot could help by showing which canteens are still open, coordinating shared kitchen use, or suggesting easy microwave-based meals. Our goal was to create a chatbot that provides comfort, clear instructions, and practical recipes that work in dorm conditions.</p>
+        
+          <p><strong>POV Statement:</strong><br>
+          A student stuck on campus during a typhoon needs quick, appliance-aware meal suggestions and reliable food access information because kitchens are limited, stores may be closed, and stress is high.</p>
+        
+          <hr>
+        
+          <h4>Task 2 — Brainstorming: Chatbot Ideas</h4>
+          <ul>
+            <li><strong>Ingredient-to-Recipe Bot:</strong> Enter ingredients → receive simple recipes matched to available appliances (text or voice guidance).</li>
+            <li><strong>Cooking Guide Bot:</strong> Hands-free voice steps (“what’s next?”) for beginner-friendly cooking.</li>
+            <li><strong>Food Availability Bot:</strong> Shows which canteens/stores are open with maps or walking time.</li>
+            <li><strong>Shared Kitchen Bot:</strong> See stove/microwave availability and coordinate ingredient swaps.</li>
+            <li><strong>Smart Shopping Bot:</strong> Sends pre-typhoon reminders with short grocery checklists.</li>
+          </ul>
+        
+          <div>
+            <img src="proj2/mindmap.png" style="max-width:100%;height:auto;border-radius:8px;border:1px solid var(--border);margin-top:8px;" />
+          </div>
+        </article>
+
+        <article class="card full-width">
+          <h3>Part 3: Prototype</h3>
+        
+          <h4>Prototype Iterations</h4>
+        
+          <h5>First Iteration</h5>
+          <p>We began with a simple chatbot where users typed their available ingredients and received one or two quick recipe suggestions. This showed the core idea clearly but did not feel very personalized.</p>
+        
+          <div>
+            <img src="proj2/proto1.jpeg" style="max-width:100%;height:auto;border-radius:8px;border:1px solid var(--border);margin-top:8px;" />
+          </div>
+
+          <h5>Second Iteration</h5>
+          <p>We added more user preferences such as diet type, allergies, and ingredient restrictions. However, during testing, students said it felt too slow and overwhelming, especially during stressful typhoon conditions.</p>
+        
+          <div>
+            <img src="proj2/proto2.jpeg" style="max-width:100%;height:auto;border-radius:8px;border:1px solid var(--border);margin-top:8px;" />
+          </div>
+
+          <h5>Third Iteration</h5>
+          <p>We simplified setup to only the essential preferences (e.g., dietary type and appliance availability). Users could immediately start entering ingredients. This made the chatbot faster and calmer to use, and this version became our main prototype moving forward.</p>
+        
+          <div>
+            <img src="proj2/proto3.png" style="max-width:100%;height:auto;border-radius:8px;border:1px solid var(--border);margin-top:8px;" />
+          </div>
+        </article>
+
+        <article class="card full-width">
+          <h3>Part 4: User Testing</h3>
+        
+          <p>We tested our final chatbot, <strong>Typhood</strong>, using a Google Form. Students rated ease of use, usefulness, and the quality of recipe suggestions. We also collected open-ended feedback about what felt helpful and what needed improvement.</p>
+        
+          <h4>Initial Feedback</h4>
+          <ul>
+            <li>Users wanted a short guide explaining how to start using the chatbot.</li>
+            <li>The early setup asked too many questions and felt overwhelming.</li>
+            <li>A simple logo or visual identity would help the chatbot feel more memorable.</li>
+            <li>Speech input would make listing ingredients faster and easier.</li>
+          </ul>
+        
+          <h4>After Iteration</h4>
+          <ul>
+            <li>The chatbot became easier and faster to use.</li>
+            <li>Users liked that Typhood adjusted recipes based on available appliances.</li>
+            <li>Both text and speech input worked well for casual ingredient input.</li>
+            <li>Some users suggested adding photos to help compare and choose meal options quickly.</li>
+          </ul>
+        
+          <ul class="entry-links">
+            <li><a href="https://forms.gle/J5xirEKRmA5mBU8a7">Link to testing results</a></li>
+            
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Use of AI</h3>
+          <p>I used generative AI to help draft the prototypes and think of user testing questions. Final design decisions, feature prioritization, and prototype layout were made by our team based on interview feedback and user testing results.</p>
+        </article>
+        
+
+        <article class="card">
+          <h3>Personal Contributions & Achievements</h3>
+          <ul>
+            <li>Led development of the prototype, features and demos</li>
+            <li>Designed and iterated on the UI across all three prototypes.</li>
+            <li>Ran multiple user testing sessions and synthesized feedback into clear design changes.</li>
+            <li>Presented the final prototype in the in-class presentation, along with creating the final presentation</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3>Personal Reflection</h3>
+          <p>I learned that even small barriers in setup or onboarding can discourage use during stressful situations. People want tools that feel calm, fast, and supportive. Reducing steps and decision-making load mattered more than adding features. In the next iteration, I want to improve recipe clarity, add images to help users choose faster, and explore voice-first interaction more deeply.</p>
         </article>
       </div>
     </section>
